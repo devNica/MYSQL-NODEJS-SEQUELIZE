@@ -1,0 +1,48 @@
+<div class="my-5 mx-5">
+    <h2 class="text-center">FUNCIONALIDAD EDICION DE DATOS DE UN LIBRO</h2>
+    <div class="border py-4 px-3 mt-3">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-justify">
+                   Es momento de agregarle funcionalidad a los enlaces en la columna <span class="text-primary">Opciones</span>, una vez mas aprovecho para
+                   recordarles que las plantillas con los formularios necesarios ya estan creadas, de igual forma todas las consultas que
+                   voy a estar utilizando, de esta forma podre avanzar mas con las explicaciones puntuales.
+                </p>
+                <p class="text-justify">
+                    La siguiente imagen, muestra el codigo para manejar la petición GET <span class="text-primary">/libros/editar/:id</span> con el que levantamos el formulario 
+                    <span class="text-primary">editarLibro</span>, el cual antes de podes ser renderizado debe esperar la ejecucion del conjunto de consultas: 
+                    <span class="text-primary">[libroAutores, noAutores, categorias]</span> todas estas consultas estan debidamente comentadas en el archivo de origen,
+                    por lo que abrevio la explicación en que dichas consultas son necesarias para cargar en los campos del formulario, los datos que son propios de un libro
+                    y permitir que puedan ser editados, o escogidos otros valores (tal es el caso de los autores y la categoria).
+                </p>
+                
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/img22.png" alt="" class="img-fluid" style="height: 600px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <p class="text-justify">
+                  Luego que tenemos estos datos, se los pasamos en las variables que se indican como: <span class="text-primary">[libro, autores, noAutores, categorias]</span> (no confundir con las consultas)
+                </p>
+                <p class="text-justify">
+                    La siguiente imagen, es una muestra de como se veran los datos en el formulario de edicion
+                </p>
+                <img src="/images/img23.png" alt="" class="img-fluid" style="height: 400px;">
+            </div>
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide20" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide22" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

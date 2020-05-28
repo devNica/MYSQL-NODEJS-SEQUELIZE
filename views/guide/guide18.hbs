@@ -1,0 +1,44 @@
+<div class="mx-5 my-5">
+    <h2 class="text-center">REGISTRAR UN LIBRO</h2>
+    <div class="border py-4 px-3 mt-3">
+    
+    <div class="row">
+        <div class="col-6">
+            <p class="text-justify">
+               El procedimiento para registrar un libro, requiere de los siguientes pasos:
+            </p>
+            <ul>
+                <li><p>Preparar una plantilla con un formulario (precreada y disponible con el repositorio)</p></li>
+                <li><p>El formulario debe ser renderizado desde una peticion HTTP/GET</p></li>
+                <li><p>Consultar por los autores disponibles y las categorias, y pasar los resultados al formulario en variables de entorno</p></li>
+                <li><p>Habilitar en el controlador de conexión, las consultas multiples para sequelize</p></li>
+                <li><p>Verificar que el formulario de registro ha recibido de forma correcta los datos pasados a traves de variables de entorno</p></li>
+                <li><p>preparar una ruta para manejar la peticion POST proveniente del formulario, en la cual vamos a recibir los datos de nuestro nuevo registro</p></li>
+                <li><p>Crear la consulta adecuada para insertar en la entidad libros y autores_con_libros un nuevo registro</p></li>
+                <li><p>Verificar en el listado de libros disponibles, que se ha creado satisfactoriamente nuestro registro</p></li>
+            </ul>
+            
+            
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <p class="text-center">Archivo de conexion, editado para permitir multiples consultas</p>
+                    <img src="/images/img17.png" alt="" class="img-fluid" style="height: 550px;">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide17" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide19" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

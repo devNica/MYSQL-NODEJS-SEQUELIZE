@@ -1,0 +1,51 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-dark text-white font-weight-bold">
+            FORMULARIO DE REGISTRO DE LIBROS
+        </div>
+        <div class="card-body">
+            {{#each libro}}
+            <form action="/libros/agregar/{{this.libro_id}}" method="POST">
+            {{/each}}
+                <div class="form-group">
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="Inserte el titulo del libro" class="form-control">
+                </div>
+                 <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" name="cantidad" id="cantidad" placeholder="Inserte la cantidad de ejemplares" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor 1:</label>
+                    <select name="autor_id" id="autor_id" class="form-control">
+                         <option value="0">Seleccione un Autor</option>
+                        {{#each autores}}
+                           <option value="{{this.autor_id}}">{{this.autor}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor 2:</label>
+                    <select name="autor_id" id="autor_id" class="form-control">
+                        <option value="0">Seleccione un Autor</option>
+                        {{#each autores}}
+                            <option value="{{this.autor_id}}">{{this.autor}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria_id" id="categoria_id" class="form-control">
+                        <option value="0">Seleccione una Categoria</option>
+                        {{#each categorias}}
+                            <option value="{{this.categoria_id}}">{{this.categoria}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

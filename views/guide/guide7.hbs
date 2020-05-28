@@ -1,0 +1,53 @@
+<div class="my-5 mx-5">
+    <h2 class="text-center">CREACION DE LA BASE DE DATOS, MODELOS Y CONFIGURACION DE SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+        <div class="row">
+            <div class="col-3">
+                 <p class="text-justify">
+                    Ahora que hemos definido los modelos principales, nos toca definir un par de modelos particularmente especiales, porque no poseen 
+                    una clave principal, pero pueden almacenar todas las combinaciones posibles de un conjunto de llaves impropias conocidas como llaves foraneas,
+                    a estos modelos se les conoce como modelos o tablas intermedias.
+                </p>
+                <p class="text-justify">
+                    Hemos definidos los siguientes modelos intermedios:
+                    <ul>
+                        <li><p>autores_con_libros</p></li>
+                        <li> <p>usuarios_con_libros</p></li>
+                    </ul>
+                </p>
+                <p>
+                    Para que un modelo se considere como intermedio, la relación entre modelos padres debe ser muchos a muchos:
+                </p>
+                <p>
+                    Un autor puede tener muchos libros, y un libro puede tener muchos autores.
+                </p>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/img6.png" alt="" class="img-fluid" style="height: 600px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="text-justify">
+                    Cuando se trate de un modelo intermedio, a menos que ocupemos definir algun atributo particular al mismo, no sera necesario
+                    hacer una definición de las llavase foraneas ya que el mismo ORM se encargará de realizarlo por nosotros; sin embargo,
+                    le indicamos a sequelize que los nombres de los atributos de este modelo, pueden utilizar guiones bajos, y ademas 
+                    deshabilitamos la creación  por defecto de los atributos <i class="text-primary">createDate</i> y <i class="text-primary">updateDate</i>
+                </p>
+                
+            </div>
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide6" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide8" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

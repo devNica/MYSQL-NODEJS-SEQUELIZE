@@ -1,0 +1,38 @@
+<div class="mx-5 my-5">
+     <h2 class="text-center">CREACION DE LA BASE DE DATOS, MODELOS Y CONFIGURACION DE SEQUELIZE</h2>
+     <div class="border py-4 px-3 mt-3">
+         <p class="text-justify">Una vez que se han terminado de instalar todos los paquetes, desde otra terminal ejecute el siguiente comando:</p>
+         <p class="text-justify"><i><b>sequelize init</b></i></p>
+         <p class="text-justify">Este comando creará automaticamente los siguientes directorios dentro de la raiz de su aplicación</p>
+         <ul>
+            <li>
+                 <p class="text-justify">
+                    config: Este directorio contiene el archivo con el que vamos a configurar la conexión a la base de datos,
+                    el archivo por default no nos será ultil, por lo que nosotros vamos a crear nuestra configuración personalizada.
+                 </p>
+            </li>
+             <li>
+                 <p class="text-justify">
+                     models: Este directorio es el mas importante, ya que en este definimos nuestros modelos, por default encontraras un archivo <i class="text-primary">index.js</i>,
+                     en el cual se realiza la importación del archivo de configuración para la conexión, ademas aca definimos las asociaciones entre los modelos (relaciones: uno a muchos, muchos a muchos, etc), el tipo de migración, etc. Cabe señalar que solo haremos algunas modificaciones a la estructura original del archivo.
+                 </p>
+             </li>
+             <li><p class="text-justify">seeders: Es un directorio provisional, donde podemos crear archivos con objetos de datos, para realizar pruebas</p></li>
+             <li>
+                 <p class="text-justify">
+                    migrations: Es el directorio donde se crea un historial de migraciones realizadas, en esta aplicación no vamos a almacenar dicho historial, por lo que puedes eliminar el directorio o ignorarlo.
+                 </p>
+            </li>
+         </ul>
+     </div>
+     <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide2" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide4" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+
+</div>

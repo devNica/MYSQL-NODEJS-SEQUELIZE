@@ -1,0 +1,32 @@
+<div class="mx-5 my-5">
+    <h2 class="text-center">CONSULTAR DATOS USANDO SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+        <p class="text-justify">
+            Antes de crear una consulta, tenemos que añadir datos a las tablas creadas, por el momento no tenemos creado ningun formulario
+            para este proposito de forma que los datos se deben insertar desde el administrador de MySQL.
+        </p>
+        <p>
+            Una vez que tengamos un conjunto de registros, vamos a crearnos una ruta en la que podamos consultar primeramente los <span class="text-primary">datos</span>
+            de todos los LIBROS almacenados, y en la consulta vamos a intentar recuperar tambien los datos de cualquier relacion de este modelo con otro
+            existente, haciendo uso del ORM y sus metodos de consulta (nada de pasar una consulta tipo: `SELECT * FROM ...`)
+        </p>
+        <p>
+            luego vamos ocupar el metodo <span class="text-primary">json({})</span> para enviar esos datos en la respuesta de nuestra peticion HTTP y vamos a examinar
+            el resultado obtenido.
+        </p>
+        <p>
+            Aclaro, que en este tutorial de preferencia haré uso de consultas personalizadas (sin hacer uso de los metodos <span class="text-primary">finders</span> del ORM) 
+            las cuales se van a procesar con el ORM, esto lo hago primeramente porque no soy experto con los metodos proporcionados por el ORM de sequelize y siento que se me dificulta el encontrar combinaciones de los mismos que me den un resultado a mi gusto, y la segunda razon, es porque de esta forma tengo un mayor control y libertad al momento de trabajar con los resultados esperados. 
+        </p>
+        <p>Bien, manos a la obra ... !!!</p>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide13" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide15" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="my-5 mx-5">
+    <h2 class="text-center">CREACION DE LA BASE DE DATOS, MODELOS Y CONFIGURACION DE SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+        <div class="row">
+            <div class="col-4">
+                <p class="text-justify">
+                    En la siguiente imagen pueden observar los modelos creados. Al revisar cada uno de estos, he detectado 
+                    que en el modelo libros la clave foranea que proviene desde la tabla categoria, se creo con un nombre
+                    incorrecto, por lo cual voy a forzar su creación con el nombre "categoria_id".
+                </p>
+                <p class="text-justify">
+                    Para forzar el nombre de una <i class="text-primary">ForeignKey</i>, en el metodo de asociacion (belongsTo, hasMany, belognsToMany)
+                    del modelo fuente y destino, se debe pasar un segundo argumento, el cual es un objeto que debe tener la siguiente forma:
+                </p>
+                <p>
+                    {foreignKey: 'name_foreignkey'}
+                </p>
+                <p>
+                    y para que este cambio pueda ser reconciliado con el modelo existente en la base de datos, hay que pasar en el argumento
+                    de la funcion <span class="text-primary">sync</span> (de sequelize) el siguiente objeto:
+                </p>
+                <p>
+                    <span class="text-primary">{alter: true}</span>
+                </p>
+                
+               
+            </div>
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/img11.png" alt="" class="img-fluid" style="height: 500px;">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide11" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+            <a href="/index/guide13" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

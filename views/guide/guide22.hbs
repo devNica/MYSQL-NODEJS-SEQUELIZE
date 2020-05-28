@@ -1,0 +1,59 @@
+<div class="my-1 mx-5">
+    <h2 class="text-center">FUNCIONALIDAD EDICION DE DATOS DE UN LIBRO</h2>
+    <div class="border py-4 px-3 mt-1">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-justify">
+                  En la siguiente ilustración tenemos el codigo para manejar la petición POST que se origina desde el formulario de edición. Se declaran los arreglos
+                  <span class="text-primary">[autorId, removerId]</span> que contienen los ID's de los autores seleccionados en los combos del formulario y los ID's de los 
+                  autores que se desean eliminar de la asociación con el libro. Luego se mapean los ID's de los autores a eliminar y se retorna un nuevo arreglo, que contiene 
+                  los ID´s que no coinciden con el mapeo.
+                </p>
+                <p>
+                    El arreglo <span class="text-primary">[autorId]</span> se va a fusionar con <span class="text-primary">libro_id</span> para formar la nueva relación 
+                    de autores-libros que se va a pasar a la consulta: <span class="text-primary">actualizarAutoresLibros</span>, la cual eliminará primeramente todas las relaciones
+                    existentes entre uno o varios autores con el ID del libro especificado y luego insertará las nuevas relaciones.
+                </p>
+                <p>
+                    La consulta: <span class="text-primary">actualizarInfoLibro</span>, lo que hará es actualizar los atributos 
+                    <span class="text-primary">{titulo, cantidad, categoria}</span> con los correspondientes datos del objeto <span class="text-primary">data</span>.
+                </p>
+            </div>
+            <div class="col-6">
+              
+                <img src="/images/img24.png" alt="" class="img-fluid" style="height: 700px; width: 670px;">
+               
+            </div>
+            <div class="col-3">
+                <p class="text-justify">
+                    Con esto damos por finalizada la edicion de los datos de un libro, la cual deberia ser funcional si has seguido 
+                    correctamente las indicaciones.
+                </p>
+                <p class="text-justify">
+                    Pero por muy funcional que te pueda parecer, siempre hay que realizar validaciones, pero estas se escapan
+                    al alcance de este tutorial; sin embargo te invito a que experimentes y añadas codigo y cualqueir consulta
+                    al respecto me la puedes dejar en los comentarios.
+                </p>
+                <p>
+                    Todavia quedan muchas cosas que hacer con este pequeño ensayo, aun no contamos con un formulario de registro de 
+                    autores y usuarios, ni con las vistas que corresponden a estos, tampoco hemos agregado una vista para 
+                    llevar un control de los libros que han sido prestados a los usuarios (registrados), ni tampoco contamos 
+                    con un proceso que nos permita realizar estos prestamos. Bien vamos a trabajar en estas dos ultimas cosas,
+                    empezando con la vista. 
+                </p>
+              
+                
+            </div>
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide21" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide23" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

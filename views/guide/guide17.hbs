@@ -1,0 +1,54 @@
+<div class="mx-5 my-5">
+    <h2 class="text-center">PASAR CONSULTAS PERSONALIZADAS A SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+    
+    <div class="row">
+        <div class="col-6">
+            <p class="text-justify">
+                Como pueden observar en el siguiente codigo, a traves de la instancia <span class="text-primary">db</span> he accedido a sequelize y al metodo
+                <span class="text-primary">query</span> que recibe dos argumentos: la consulta <span class="text-primary">librosDisponibles</span>, (la cual se ha importado, desde el archivo
+                donde se encuentra declarada) y un objeto en el que especificamos el formato de la respuesta <span class="text-primary">{raw: true, plain: false}</span> y el tipo 
+                de consulta que queremos procesar: <span class="text-primary">SELECT</span>.
+            </p>
+            <p>
+                De igual manera hemos pasado del metodo <span class="text-primary">json({})</span> al metodo <span class="text-primary">render</span>, para responder 
+                a la petición enviando una plantilla y el resultado de la consulta en la variable de entorno: <span class="text-primary">libros</span>
+            </p>
+            <p>
+                Si desean  profundizar conocimientos en esta forma de pasar consultas a sequelize, les dejo el enlace a la documentacion en el siguiente botón:
+            </p>
+            <a href="https://sequelize.org/v5/manual/raw-queries.html" class="btn btn-warning font-weight-bold">GO!</a>
+            <hr>
+            <p>
+                Al hacer clic en el enlace <span class="text-primary">Libros</span> de la barra de navegación podran ver listados los resultados obtenidos en la consulta.
+                Como he dicho, todas estas plantillas estan precreadas y pueden examinarlas en el directorio <span class="text-primary">templates</span> en las vistas
+                del proyecto. 
+            </p>
+            <p>
+                Si modificamos en la base de datos la cantidad disponible de los libros y hacemos que su valor sea cero, estos seran eliminados de nuestra vista ya que 
+                en la consulta hemos definido que la condición para que se muestren los resultados es que el atributo cantidad sea mayor que cero.
+            </p>
+            
+        </div>
+        <div class="col-6">
+            <div class="card">
+               
+                <div class="card-body">
+                    <img src="/images/img16.png" alt="" class="img-fluid" style="height: 550px;">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide16" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide18" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

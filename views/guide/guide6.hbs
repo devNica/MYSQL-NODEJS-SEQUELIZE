@@ -1,0 +1,46 @@
+<div class="my-5 mx-5">
+    <h2 class="text-center">CREACION DE LA BASE DE DATOS, MODELOS Y CONFIGURACION DE SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+        <div class="row">
+            <div class="col-3">
+                 <p class="text-justify">El siguiente paso, es comenzar a definir los modelos (tablas) que tendra nuestra BD, les recuerdo que este tutorial no es un curso de bases de datos, de forma que no voy a profundizar en los conocimientos, lo que aca examinaremos es como usar el ORM de <i>sequelize</i> para generar esos modelos con las relaciones (entre los modelos creados) mas comunes que se suelen emplear.
+                </p>
+                <p class="text-justify">
+                    partiremos de la creación de los siguientes modelos y sus atributos:
+                    <ul>
+                        <li><p>autores: [id, nombre, apellido, estado]</p></li>
+                        <li> <p>libros: [id, titulo, cantidad, estado]</p></li>
+                        <li><p>categorias: [id, categoria]</p></li>
+                        <li><p>usuarios: [id, nombre, apellido, acumulado, estado]</p></li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/img5.png" alt="" class="img-fluid" style="height: 600px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <p>
+                    En la imagen, podemos ver la definición del modelo autor, que tiene dos atributos de tipo <i class="text-primary">string</i>, un atributo de tipo <i class="text-primary">boolean</i>, y una clave principal
+                </p>
+                <p>
+                    En la documentación de <i class="text-primary">sequelize</i>
+                    podran obtener mayor información de como personalizar sus modelos con funciones de retorno, datos formateados, etc. De momento solo vamos a trabajar con la configuración mas simple posible, para evitar la complejidad de este tutorial.
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide5" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide7" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="my-5 mx-5">
+    <h2 class="text-center">CREACION DE LA BASE DE DATOS, MODELOS Y CONFIGURACION DE SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-justify">
+                   Es momento de declarar las asociaciones de nuestros modelos en el /models/index.js las cuales se resumen como:
+                </p>
+                <ul>
+                    <li>
+                        <p class="text-justify">
+                            Un autor tiene muchos libros y un libro tiene muchos autores
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-justify">
+                            Un usuario tiene muchos libros y un libro tiene muchos usuarios
+                        </p>
+                    </li>
+                    <li>
+                        <p class="text-justify">
+                            Un libro tiene una categoria y una categoria tiene muchos libros
+                        </p>
+                    </li>
+                </ul>
+                <p class="text-justify">
+                    Estas y otras relaciones pueden estudiarse mejor en la documentación de sequelize, haga clic en el sig botón:
+                </p>
+                <a href="https://sequelize.org/master/class/lib/associations/base.js~Association.html" class="btn btn-warning font-weight-bold">Go</a>
+            </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/images/img7.png" alt="" class="img-fluid" style="height: 600px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <p class="text-justify">
+                   La propiedad  <span class="text-primary">through</span> nos permite definir el nombre que tendra nuestro modelo intermedio. Es importante observar que 
+                   este debe definirse en las instancias padres ({autor y libro}, {usuario y libro}), en tal caso la instancia a relacionar
+                   deberá siempre anteponer el metodo "belongsToMany" que define la relación muchos-a-muchos.
+                </p>
+                <p>
+                    El metodo <span class="text-primary">belongsTo</span> se debe ocupar siempre en las instancias con relación uno-a-uno, como tal es el caso en 
+                    el que un libro solo puede pertenecer a una categoria (para este ejemplo), mientras tanto "hasMany" deberá ocuparse 
+                    siempre en las instancias con relación uno a muchos: una categoria tiene muchos libros.
+                </p>
+                
+            </div>
+        </div>
+       
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide7" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide9" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

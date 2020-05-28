@@ -1,0 +1,52 @@
+<div class="mx-5 my-5">
+    <h2 class="text-center">CONSULTAR DATOS USANDO SEQUELIZE</h2>
+    <div class="border py-4 px-3 mt-3">
+    
+    <div class="row">
+        <div class="col-6">
+            <p class="text-justify">
+                En la imagen, se puede apreciar la construcción de la ruta por medio de la cual realizamos 
+                la consulta a la base de datos, utilizando los metodos definidos en el ORM de sequelize.
+                El metodo <span class="text-primary">findAll({})</span> va devolver un arreglo de todos los elementos que coincidan con un cierto
+                parametro de busqueda que se define en el objeto: <span class="text-primary">where:{attr: value}</span>, cuando
+                este parametro no se define, la consulta se ejecuta como si se tratase de: <span class="text-primary"> where 1</span> (En lenguajes de 
+                consultas de SQL)
+            </p>
+            <p>
+                Cabe señalar, que para poder recuperar los datos de otros modelos que esten de alguna forma relacionados con el modelo donde estoy
+                realizando la consulta, debo definirlos dentro del parametro <span class="text-primary">include</span>, en este caso he definido
+                los modelos Autor y Categoria, que estan relacionados con Libros, y 
+                he dejado por fuera a Usuarios, ya que no me es relevante para 
+                el objetivo de esta consulta. 
+            </p>
+            <p>
+                Si quieren conocer mas de los metodos de busqueda de Sequelize, por favor has clic en el siguiente boton:
+            </p>
+            <a href="https://sequelize.org/master/manual/model-querying-finders.html" class="btn btn-warning font-weight-bold">GO!</a>
+            <hr>
+            <p class="text-justify">
+                El siguiente reto, es hacer esto mismo pero con una consulta personalizada.
+            </p>
+        </div>
+        <div class="col-6">
+            <div class="card">
+               
+                <div class="card-body">
+                    <img src="/images/img14.png" alt="" class="img-fluid" style="height: 550px;">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-10"></div>
+        <div class="col-1">
+            <a href="/index/guide14" class="btn btn-primary"><i class="fas fa-backward"></i></a>
+        </div>
+        <div class="col-1">
+             <a href="/index/guide16" class="btn btn-primary"><i class="fas fa-forward"></i></a>
+        </div>
+    </div>
+</div>

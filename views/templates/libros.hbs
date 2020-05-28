@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col" class="text-center">Id</th>
+            <th scope="col" class="text-center">Titulo</th>
+            <th scope="col" class="text-center">Autor</th>
+            <th scope="col" class="text-center">Cantidad</th>
+            <th scope="col" class="text-center">Categoria</th>
+            <th scope="col" class="text-center">Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {{#each libros}}
+               <tr>
+                    <th scope="row" class="text-center">{{this.libro_id}}</th>
+                    <td class="text-center">{{this.titulo}}</td>
+                    <td class="text-center">{{this.autor}}</td>
+                    <td class="text-center">{{this.cantidad}}</td>
+                    <td class="text-center">{{this.categoria}}</td>
+                    <td class="text-center">
+                        <a href="/libros/asignar/{{this.libro_id}}" class="btn btn-sm btn-primary"><i class="fas fa-book-reader"></i></a>
+                        <a href="/libros/editar/{{this.libro_id}}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+                    </td>
+                </tr>
+            {{/each}}
+        
+        </tbody>
+    </table>
+    <div class="mt-4">
+        <a href="/libros/agregar" class="btn btn-dark">Agregar<i class="fas fa-book-medical ml-3"></i></a>
+    </div>
+
+
+</div>
